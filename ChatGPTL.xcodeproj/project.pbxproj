@@ -14,6 +14,7 @@
 		71B3B40329E3890C00DAF460 /* ChatGPTLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3B40229E3890C00DAF460 /* ChatGPTLTests.swift */; };
 		71B3B40D29E3890C00DAF460 /* ChatGPTLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3B40C29E3890C00DAF460 /* ChatGPTLUITests.swift */; };
 		71B3B40F29E3890C00DAF460 /* ChatGPTLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3B40E29E3890C00DAF460 /* ChatGPTLUITestsLaunchTests.swift */; };
+		71B3B41C29E389C600DAF460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3B41B29E389C600DAF460 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		71B3B40829E3890C00DAF460 /* ChatGPTLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatGPTLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B3B40C29E3890C00DAF460 /* ChatGPTLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTLUITests.swift; sourceTree = "<group>"; };
 		71B3B40E29E3890C00DAF460 /* ChatGPTLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTLUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		71B3B41B29E389C600DAF460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				71B3B3F429E3890C00DAF460 /* Assets.xcassets */,
 				71B3B3F929E3890C00DAF460 /* ChatGPTL.entitlements */,
 				71B3B3F629E3890C00DAF460 /* Preview Content */,
+				71B3B41B29E389C600DAF460 /* AppDelegate.swift */,
 			);
 			path = ChatGPTL;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B3B41C29E389C600DAF460 /* AppDelegate.swift in Sources */,
 				71B3B3F329E3890A00DAF460 /* ContentView.swift in Sources */,
 				71B3B3F129E3890A00DAF460 /* ChatGPTLApp.swift in Sources */,
 			);
