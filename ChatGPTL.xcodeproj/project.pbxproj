@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71574CC329E4D67400B8125B /* ChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71574CC229E4D67400B8125B /* ChatGPTAPI.swift */; };
+		71574CC529E4E65A00B8125B /* ChatCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71574CC429E4E65A00B8125B /* ChatCompletion.swift */; };
 		71B3B3F129E3890A00DAF460 /* ChatGPTLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3B3F029E3890A00DAF460 /* ChatGPTLApp.swift */; };
 		71B3B3F329E3890A00DAF460 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3B3F229E3890A00DAF460 /* ContentView.swift */; };
 		71B3B3F529E3890C00DAF460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B3B3F429E3890C00DAF460 /* Assets.xcassets */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71574CC229E4D67400B8125B /* ChatGPTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAPI.swift; sourceTree = "<group>"; };
+		71574CC429E4E65A00B8125B /* ChatCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCompletion.swift; sourceTree = "<group>"; };
+		71574CC829E4F00200B8125B /* MyConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MyConfig.xcconfig; sourceTree = "<group>"; };
+		71574CC929E4F15A00B8125B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		71B3B3ED29E3890A00DAF460 /* ChatGPTL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B3B3F029E3890A00DAF460 /* ChatGPTLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTLApp.swift; sourceTree = "<group>"; };
 		71B3B3F229E3890A00DAF460 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,9 +80,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71574CC629E4E66300B8125B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				71574CC429E4E65A00B8125B /* ChatCompletion.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		71574CC729E4E66B00B8125B /* data */ = {
+			isa = PBXGroup;
+			children = (
+				71574CC629E4E66300B8125B /* model */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		71B3B3E429E3890900DAF460 = {
 			isa = PBXGroup;
 			children = (
+				71574CC829E4F00200B8125B /* MyConfig.xcconfig */,
 				71B3B3EF29E3890A00DAF460 /* ChatGPTL */,
 				71B3B40129E3890C00DAF460 /* ChatGPTLTests */,
 				71B3B40B29E3890C00DAF460 /* ChatGPTLUITests */,
@@ -97,12 +120,15 @@
 		71B3B3EF29E3890A00DAF460 /* ChatGPTL */ = {
 			isa = PBXGroup;
 			children = (
+				71574CC929E4F15A00B8125B /* Info.plist */,
 				71B3B3F029E3890A00DAF460 /* ChatGPTLApp.swift */,
 				71B3B3F229E3890A00DAF460 /* ContentView.swift */,
 				71B3B3F429E3890C00DAF460 /* Assets.xcassets */,
 				71B3B3F929E3890C00DAF460 /* ChatGPTL.entitlements */,
 				71B3B3F629E3890C00DAF460 /* Preview Content */,
 				71B3B41B29E389C600DAF460 /* AppDelegate.swift */,
+				71574CC229E4D67400B8125B /* ChatGPTAPI.swift */,
+				71574CC729E4E66B00B8125B /* data */,
 			);
 			path = ChatGPTL;
 			sourceTree = "<group>";
@@ -262,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71574CC529E4E65A00B8125B /* ChatCompletion.swift in Sources */,
+				71574CC329E4D67400B8125B /* ChatGPTAPI.swift in Sources */,
 				71B3B41C29E389C600DAF460 /* AppDelegate.swift in Sources */,
 				71B3B3F329E3890A00DAF460 /* ContentView.swift in Sources */,
 				71B3B3F129E3890A00DAF460 /* ChatGPTLApp.swift in Sources */,
@@ -303,6 +331,7 @@
 /* Begin XCBuildConfiguration section */
 		71B3B41029E3890C00DAF460 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71574CC829E4F00200B8125B /* MyConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -426,6 +455,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGPTL/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatGPTL/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +481,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGPTL/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatGPTL/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
